@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container" id="header">
+            <nav class="nav" id="nav">
+                <a class="nav__brand disabled" href="#">Лого</a>
+                <ul class="nav__menu">
+                    <li class="nav__item first-element goods">
+                        <a class="nav__link" id="goods" href="#">Грузы
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="goods-button"><img src="img/arrow.png" alt=""></button></a>
+                        </a> 
+                        <ul class="nav__subnav" id="goods-subnav">
+                            <li><a href="#">Грузы списком</a></li>
+                            <li><a href="#">Грузы на карте</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item transit">
+                        <a class="nav__link" id="transit" href="#">Транспорт
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="transit-button"><img src="img/arrow.png" alt=""></button></a>
+                        </a> 
+                        <ul class="nav__subnav" id="transit-subnav">
+                            <li><a href="#">Транспорт списком</a></li>
+                            <li><a href="#">Расчитать стоимость</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item auction">
+                        <a class="nav__link" id="auction" href="#">Аукцион
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="auction-button"><img src="img/arrow.png" alt=""></button></a>
+                        </a> 
+                        <ul class="nav__subnav" id="auction-subnav">
+                            <li><a href="#">Транспорт</a></li>
+                            <li><a href="#">Грузы</a></li>
+                        </ul>
+                    </li> 
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">О&nbsp;нас</a>
+                    </li> 
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" id="search-button" href="#"><img src="img/search.png" alt=""></a>
+                        <ul class="search-block" id="searchBlock">
+                            <input type="text" placeholder="Поиск">
+                            <button>Найти</button>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav__menu-auth">
+                    <li class="nav__item lang">
+                        <a class="nav__link" id="lang" href="#">Ру
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="lang-button"><img src="img/arrow.png" alt=""></button></a>
+                        </a>
+                        <ul class="nav__subnav" id="lang-subnav">
+                            <li><a href="#"><input type="radio" value="rus" checked name="language" checked/>&nbsp;Русский</a></li>
+                            <li><a href="#"><input type="radio" value="en" name="language"/>&nbsp;Английский</a></li>
+                            <li><a href="#"><input type="radio" value="pol" name="language"/>&nbsp;Польский</a></li>
+                            <li><a href="#"><input type="radio" value="by" name="language"/>&nbsp;Белорусский</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#"><img src="img/star.svg" alt=""></a>
+                        <a class="nav__link notification" href="#"><img src="img/Vector.svg" alt=""></a>
+                        <span><img src="img/notification.png" alt=""></span> 
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__link standart-button" href="#">Регистрация</button>
+                        <a href="other pages/account.html"><button class="nav__link sign-in" href="">Войти</button></a>
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__link add" id="button-add" href="#"><img src="img/plus.png" alt=""></button>
+                    </li>
+                </ul> 
+                <div class="burger">
+                    <img src="img/burger.png" alt="">
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="breadcrumb">
+                <img src="img/Arrow-back.svg" alt="">
+                <p>&ensp;Хлебные крошки</p>
+            </div>
+            <div class="main-content">
+                <div class="left-block">
+                    <img src="img/photo.png" class="left-block__photo" alt="">
+                    <div class="left-block__content">
+                        <div class="left-block__title">
+                            <h1>Здесь информация о адересе и времени, загрузки и разгрузки, если будем выводить</h1>
+                        </div>
+                        <div class="left-block__additional">
+                            <div class="left-block__additional-title">Дополнительные договоренности</div>
+                            <form action="#" class="form">
+                                <div class="form__column">
+                                    <label><input type="checkbox"/>&ensp;Подача: В тот же день</label>
+                                    <label><input type="checkbox" class="checkbox" checked/>&ensp;Коммиссия: Всю на себя</label>
+                                </div>
+                                <div class="form__column">
+                                    <label><input type="checkbox"/>&ensp;Дам скидку на 2-й заказ</label>
+                                    <label><input type="checkbox"/>&ensp;Доставлю быстрее</label>
+                                </div>
+                                <button class="form__button">Подтвердить</button>
+                            </form>
+                        </div>
+                        <div class="left-block__advantages">
+                            <h1>Текст в преимуществами и советами, почему стоит вести диалог через + иконки, которые описывают быстрые преимущества</h1>
+                        </div>
+                        <div class="left-block__dialog dialog">
+                            <div class="dialog__date">16 декабря 2020</div>
+                            <div class="dialog__message">
+                                <div class="row">
+                                    <img src="img/girl.svg" alt="">
+                                    <div class="dialog__message-name">Настя</div>
+                                    <div class="dialog__message-text">Здравствуйте! Начинаю оформлять документы. Все документы прикреплю в вкладку.<br>
+                                    И сброшу подтверждение. Как проверите кликните</div>
+                                </div>
+                                <div class="dialog__message-info">
+                                    <p>10:25&ensp;</p>
+                                    <img src="img/message.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dialog__documents row">
+                                <img src="img/documents.svg" alt="">
+                                <h2>Документы оформлены</h2>
+                                <div class="dialog__documents-buttons">
+                                    <button class="dialog__documents-confirm standart-button">Подтвердить</button>
+                                    <button class="dialog__documents-reject">Отклонить</button>
+                                </div>
+                            </div>
+                            <div class="dialog__message">
+                                <div class="row">
+                                    <img src="img/man.svg" alt="">
+                                    <div class="dialog__message-name">Егор</div>
+                                    <div class="dialog__message-text">Все отлично! 17 в 8 утра буду на месте. Спасибо</div>
+                                </div>
+                                <div class="dialog__message-info">
+                                    <p>10:25&ensp;</p>
+                                    <img src="img/message.svg" alt="">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="dialog__date">17 декабря 2020</div>
+                            <div class="dialog__message">
+                                <div class="row">
+                                    <img src="img/man.svg" alt="">
+                                    <div class="dialog__message-name">Егор</div>
+                                    <div class="dialog__message-text">Добрый день, груз принял, загрузка прошла. Фото прилагаю<br><img src="img/transit.png" alt=""></div>
+                                </div>
+                                <div class="dialog__message-info">
+                                    <p>10:25&ensp;</p>
+                                    <img src="img/message.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dialog__message">
+                                <div class="row">
+                                    <img src="img/girl.svg" alt="">
+                                    <div class="dialog__message-name">Настя</div>
+                                    <div class="dialog__message-text">Здравствуйте! Все поняла, ждем на разгрузке. Хорошей дороги!</div>
+                                </div>
+                                <div class="dialog__message-info">
+                                    <p>10:25&ensp;</p>
+                                    <img src="img/message.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dialog__way row">
+                                <img src="img/way.svg" alt="">
+                                <h2>В пути</h2>
+                                <button class="dialog__way-confirm">Ждёт подтверждения</button>
+                            </div>
+                            <div class="dialog__message">
+                                <div class="row">
+                                    <img src="img/man.svg" alt="">
+                                    <div class="dialog__message-name">Егор</div>
+                                    <div class="dialog__message-text">Настя! Подтвердите пожалуйста статус.</div>
+                                </div>
+                                <div class="dialog__message-info">
+                                    <p>10:25&ensp;</p>
+                                    <img src="img/message.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-block__reviews reviews">
+                            <div class="reviews__left">
+                                <h2>Оставьте отзыв</h2>
+                                <div class="reviews__textarea">Все отлично. Деньги перевели сразу. Описание соответвовало реальности</div>
+                            </div>
+                            <div class="reviews__right">
+                                <div class="reviews__rating">
+                                    <div class="reviews__rating-text">Ваша оценка:</div>
+                                    <img src="img/ratingStar.svg" alt="">
+                                    <img src="img/ratingStar.svg" alt="">
+                                    <img src="img/ratingStar.svg" alt="">
+                                    <img src="img/ratingStar.svg" alt="">
+                                    <img src="img/whiteStar.svg" alt="">
+                                </div>
+                                <button class="reviews__button">Оставить отзыв</button>
+                                <a href="#" class="reviews__link">Зачем оставлять отзыв?</a>
+                            </div>
+                        </div>
+                        <div class="left-block__reasons reasons">
+                            <div class="reasons__title">Зачем нужно оставлять отзыв</div>
+                            <div class="reasons__content">
+                                <ul>
+                                    <li>Вы повышаете свои метрики, что позволяет вам быстрее найти партнера</li>
+                                    <li>Вы помогаете выбрать другим пользователям партнера</li>
+                                    <li>Еще выгода</li>
+                                </ul>
+                                <div class="reasons__discount">
+                                    Оставьте отзыв и получите скидку 30% на следующий заказ
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="left-block__inTransit inTransit">
+                            <div class="inTransit__title">Перевести заказа в этап в пути</div>
+                            <div class="inTransit__textarea textarea">
+                                <div class="textarea__button-bar">
+                                    <ul>
+                                        <li class="textarea__button" id="boldText">
+                                            <span><img src="img/bold.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="italicText">
+                                            <span><img src="img/italic.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="underlineText">
+                                            <span><img src="img/underline.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="strikethroughText">
+                                            <span><img src="img/strikethrough.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="leftAlign">
+                                            <span><img src="img/left-align.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="centerAlign">
+                                            <span><img src="img/center-align.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="justifyAlign">
+                                            <span><img src="img/justify.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="rightAlign">
+                                            <span><img src="img/right-align.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="listNumber">
+                                            <span><img src="img/list number.svg" alt=""></span>
+                                        </li>
+                                        <li class="textarea__button" id="listMarker">
+                                            <span><img src="img/list marker.svg" alt=""></span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="textarea__textbox" contenteditable="true" v-on:keypress="handleKeypress($event)" data-ph="Текст">
+                                        Начните набирать сообщение...
+                                </div>
+                                
+                                <div class="textarea__bottom">
+                                    <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                                    <label for="input__file" class="input__file-button">
+                                        <img class="input__file-icon" src="img/upload.svg" alt="">
+                                        <span class="input__file-text">Выберите файл</span>
+                                    </label>
+                                    <button class="standart-button">Отправить</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                
+                <div class="right-block">
+                    <div class="right-block__contacts contacts">
+                        <div class="content">
+                            <div class="contacts__title">Контакты</div>
+                        <div class="contacts__company">
+                            <img src="img/company.png" class="image" alt="">
+                            <div class="contacts__company-text text">
+                                <p>(ООО) «СТА Логистик»</p>
+                                <p>Логистическая компания</p>
+                                <a href="#">Реквизиты</a>   
+                            </div>
+                        </div>
+                        <div class="contacts__person person">
+                            <img src="img/person.png" class="image" alt="">
+                            <div class="contacts__person-text text">
+                                <p>Настя</p>
+                                <p>С вами работает</p>
+                            </div>
+                        </div>
+                        <div class="contacts__phone phone">
+                            <div class="phone__title">Телефоны</div>
+                            <div class="phone__phones">
+                                <div class="phone__1">+375 17 270 49 79</div>
+                                <div class="phone__2">+375 17 270 49 79</div>
+                            </div>
+                        </div>
+                        <div class="contacts__email email">
+                            <div class="email__title">E-mail</div>
+                            <div class="email__email">19+@stalogistic.com</div>
+                        </div>
+                        </div> 
+                    </div>
+                    <div class="right-block__payment payment">
+                        <div class="payment__title">Оплата</div>
+                        <div class="payment__subtitle">Предоплата 30%</div>
+                        <div class="payment__stages stages">
+                            <div class="payment__stages-first stage">
+                                <img src="img/first.png" class="image" style="position: absolute; margin-top: 10px;" alt="">
+                                <p>Заказ подтверждён</p>
+                            </div>
+                            <div class="payment__stages-second stage">
+                                <img src="img/second.png" class="image stages" alt="">
+                                <p>Документы оформлены</p>
+                            </div>
+                            <div class="payment__stages-third stage">
+                                <img src="img/third.png" class="image stages" alt="">
+                                <p>Груз загружен</p>
+                            </div>
+                            <div class="payment__stages-fourth stage">
+                                <img src="img/fourth.png" class="image stages" alt="">
+                                <p>Догруз (если есть)</p>
+                            </div>
+                            <div class="payment__stages-fifth stage">
+                                <img src="img/fifth.png" class="image stages" alt="">
+                                <p>В пути</p>
+                            </div>
+                            <div class="payment__stages-sixth stage">
+                                <img src="img/sixth.png" class="image stages" alt="">
+                                <p>Доставлен, разгружен</p>
+                            </div>
+                        </div>
+                        <button>Отменить заказ</button>
+                    </div>
+                    <div class="right-block__documents documents">
+                        <div class="documents__top">
+                            <div class="documents__title">Документы (Фактуры)</div>
+                            <button class="documents__button" id="documents-button"><img src="img/arrow.png" class="arrow-img" alt=""></button>
+                        </div> 
+                    </div>
+                    <ul class="documents__dropdown" id="dropdownDocument">
+                        <li>
+                            <img src="img/document.png" class="image" alt="">
+                            <a href="#">Договор (0,53 мб.)</a>
+                        </li>
+                        <li>
+                            <img src="img/document.png" class="image" alt="">
+                            <a href="#">ТТН (0,53 мб.)</a>
+                        </li>
+                        <li>
+                            <img src="img/document.png" class="image" alt="">
+                            <a href="#">Счет-фактура (0,53 мб.)</a>
+                        </li>
+                        <li>
+                            <img src="img/document.png" class="image" alt="">
+                            <a href="#">Акт-приема (0,53 мб.)</a>
+                        </li>
+                        <li>
+                            <img src="img/document.png" class="image" alt="">
+                            <a href="#">Пропуск</a>
+                        </li>
+                        <li>
+                            <button><img src="img/add.png" width="14" height="14" class="image" alt="">&ensp;Добавить</button>
+                        </li>
+                    </ul>
+
+                    <div class="right-block__yourCar yourCar">
+                        <div class="yourCar__top">
+                            <div class="yourCar__title">Ваше авто</div>
+                            <button class="yourCar__button" id="yourCar-button"><img src="img/arrow.png" class="arrow-img" alt=""></button>
+                        </div> 
+                    </div>
+                    <div class="yourCar__dropdown" id="dropdownCar">
+                        <img src="img/avatar.png" class="image" alt="">
+                        <div class="yourCar__dropdown-content">
+                            <h1 class="yourCar__dropdown-title">MAN 535 (AA1691-7)</h1>
+                            <p class="yourCar__dropdown-subtitle">Водитель:</p>
+                            <h1 class="yourCar__dropdown-name">Егор Кравцов</h1>
+                            <p class="yourCar__dropdown-subtitle">Телефон:</p>
+                            <h1 class="yourCar__dropdown-phone">+375 29 360 45 77</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container" id="footer">
+            <div class="footer">
+            <div class="footer__basics">
+                <h2>Основное</h2>
+                <div class="basics">
+                    <div class="basics__goods">
+                        <a href="#">Грузы</a>
+                        <a href="#">Списком</a>
+                        <a href="#">На карте</a>
+                    </div>
+                    <div class="basics__transport">
+                        <a href="#">Транспорт</a>
+                        <a href="#">Списком</a>
+                        <a href="#">Рассчитать стоимость</a>
+                    </div>
+                    <div class="basics__auction">
+                        <a href="#">Аукцион</a>
+                        <a href="#">Грузы</a>
+                        <a href="#">Транспорт</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__additional">
+                <h2>Дополнительно</h2>
+                <div class="additional">
+                    <a href="#">О нас</a>
+                    <a href="#">Как работает</a>
+                    <a href="#">Новости</a>
+                    <a href="#">База знаний</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Раздел если будет</a>
+                </div>
+            </div>
+            <div class="footer__support">
+                <h2>Техническая поддержка</h2>
+                <div class="support">
+                    <div class="support__phone">
+                        <a href="#">Телефон</a>
+                        <a href="#">+375 29 360-45-77</a>
+                    </div>
+                    <div class="support__email">
+                        <a href="#">E-mail</a>
+                        <a href="#">sup@zigmus.com</a>
+                    </div>
+                </div>
+                <button class="standart-button">Написать</button>
+            </div>
+        </div>
+        <div class="footer__bottom bottom">
+            <a href="#">Платформа работает в beta режиме</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+            <div class="bottom__social-networks">
+                <img src="img/vk.svg" alt="">
+                <img src="img/facebook.svg" alt="">
+                <img src="img/instagram.svg" alt="">
+            </div>
+            <a href="#" id="idea">Предложить идею</a>
+        </div>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
