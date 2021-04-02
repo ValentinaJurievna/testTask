@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a class="nav__brand disabled" href="#">Лого</a>
+                <ul class="nav__menu">
+                    <li class="nav__item first-element goods">
+                        <a class="nav__link" id="goods" href="#">Грузы
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="goods-button"><img src="../img/arrow.png" alt=""></button></a>
+                        </a> 
+                        <ul class="nav__subnav" id="goods-subnav">
+                            <li><a href="#">Грузы списком</a></li>
+                            <li><a href="#">Грузы на карте</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item transit">
+                        <a class="nav__link" id="transit" href="#">Транспорт
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="transit-button"><img src="../img/arrow.png" alt=""></button></a>
+                        </a> 
+                        <ul class="nav__subnav" id="transit-subnav">
+                            <li><a href="#">Транспорт списком</a></li>
+                            <li><a href="#">Расчитать стоимость</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item auction">
+                        <a class="nav__link" id="auction" href="#">Аукцион
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="auction-button"><img src="../img/arrow.png" alt=""></button></a>
+                        </a> 
+                        <ul class="nav__subnav" id="auction-subnav">
+                            <li><a href="#">Транспорт</a></li>
+                            <li><a href="#">Грузы</a></li>
+                        </ul>
+                    </li> 
+                    <li class="nav__item" id="about">
+                        <a class="nav__link" href="#">О&nbsp;нас</a>
+                    </li> 
+                    <li class="nav__item" id="news">
+                        <a class="nav__link" href="#">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" id="search-button" href="#"><img src="../img/search.png" alt=""></a>
+                        <ul class="search-block" id="searchBlock">
+                            <input type="text" placeholder="Поиск">
+                            <button class="standart-button">Найти</button>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav__menu-auth">
+                    <li class="nav__item lang">
+                        <a class="nav__link" id="lang" href="#">Ру
+                            <a class="nav__item-dropdown" href="#"><button class="documents__button" id="lang-button"><img src="../img/arrow.png" alt=""></button></a>
+                        </a>
+                        <ul class="nav__subnav" id="lang-subnav">
+                            <li><a href="#"><input type="radio" value="rus" checked name="language" checked/>&nbsp;Русский</a></li>
+                            <li><a href="#"><input type="radio" value="en" name="language"/>&nbsp;Английский</a></li>
+                            <li><a href="#"><input type="radio" value="pol" name="language"/>&nbsp;Польский</a></li>
+                            <li><a href="#"><input type="radio" value="by" name="language"/>&nbsp;Белорусский</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#"><img src="../img/star.svg" alt=""></a>
+                        <a class="nav__link notification"  href="#"><img src="../img/Vector.svg" id="notification" alt=""></a>
+                        <span><img src="../img/notification.png" id="notification-icon" alt=""></span> 
+                        <ul class="nav__subnav" id="notification-subnav">
+                            <h3>Уведомления</h3>
+                            <hr>
+                            <li>
+                                <a href="#" class="disabled">Грузы</a>
+                                <a href="#" class="disabled">Заказ №0004 Подтвердите статус</a>
+                                <a href="#" class="disabled">13:36</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#" class="disabled">Транспорт</a>
+                                <a href="#" class="disabled">Нет уведомлений</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#" class="disabled">Аукционы</a>
+                                <a href="#" class="disabled">Аукцион №0001 Закончиться через 20 мин</a>
+                                <a href="#" class="disabled">13:36</a>
+                                <a href="#" class="disabled">Заказ №0001 Вам предложиди сделку</a>
+                                <a href="#" class="disabled">13:36</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item account">
+                        <img src="../img/account.svg" alt="">
+                        <a href="#" id="account">&ensp;Егор</a>
+                        <button class="documents__button" id="account-button"><img src="../img/arrow.png" alt=""></button>
+                        <ul class="nav__subnav" id="account-subnav">
+                            <h3>Личный кабинет</h3>
+                            <hr>
+                            <li><a href="#"><img src="../img/goods.svg" alt="">&nbsp;&nbsp;Грузы <button class="documents__button"><img src="../img/arrow.png" alt=""></button></a></li>
+                            <li>
+                                <a href="#" id="transport"><img src="../img/transport.svg" alt="">&nbsp;&nbsp;Транспорт <button class="documents__button" id="transport-button"><img src="../img/arrow.png" alt=""></button></a>
+                                <ul class="nav__subnav" id="transport-subnav">
+                                    <li><a href="#">Мой транспорт</a></li>
+                                    <li><a href="#">Не подтверждённые</a></li>
+                                    <li><a href="#">В работе</a></li>
+                                    <li><a href="#">Скрытые</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../img/auction.svg" alt="">&nbsp;&nbsp;Аукцион <button class="documents__button"><img src="../img/arrow.png" alt=""></button></a></li>
+                            <li><a href="#"><img src="../img/building.svg" alt="">&nbsp;&nbsp;Компания</a></li>
+                            <li><a href="#"><img src="../img/settings.svg" alt="">&nbsp;&nbsp;Настройки</a></li>
+                            <li><a href="#"><img src="../img/affiliate-marketing.svg" alt="">&nbsp;&nbsp;Реф. программа</a></li>
+                            <li><a href="#"><img src="../img/discount.svg" alt="">&nbsp;&nbsp;Ваша скидка</a></li>
+                            <li><a href="#"><img src="../img/megaphone.svg" alt="">&nbsp;&nbsp;Реклама</a></li>
+                            <button class="nav__link go-out" href="">Выйти</button>
+                        </ul>
+                       
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__link add" id="button-add" href="#"><img src="../img/plus.png" alt=""></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <script src="../script.js"></script>
+</body>
+</html>
