@@ -926,6 +926,10 @@ hr {
     box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
 }
 
+.documents__top:hover, .yourCar__top:hover {
+    cursor: pointer;
+}
+
 .documents, .yourCar {
     border-radius: 8px;
 }
@@ -947,7 +951,6 @@ hr {
 .documents-button_active {
     transform: rotate(180deg);
     transition: 0.3s ease;
-
 }
 
 .documents__dropdown, .yourCar__dropdown {
@@ -955,10 +958,14 @@ hr {
     margin: 0;
     padding-top: 20px;
     display: none;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
 }
 
 .documents__dropdown_active {
     display: block;
+    transform: scaleY(1);
 }
 
 .documents__dropdown li:first-child {
@@ -972,6 +979,7 @@ hr {
 }
 
 .documents__dropdown li button, .payment button {
+    font-family: 'Gilroy';
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -991,11 +999,21 @@ hr {
 .yourCar__dropdown_active {
     display: flex;
     flex-direction: row;
-    opacity: 1;
+    transform: scaleY(1);
 }
 
 .yourCar__dropdown-content {
     margin-left: 15px;
+}
+
+.yourCar__dropdown-content button {
+    font-family: 'Gilroy';
+    font-size: 11px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #236EFF;
+    border: none;
+    margin-top: 10px;
 }
 
 .yourCar__dropdown-title {
@@ -1012,6 +1030,7 @@ hr {
     font-size: 10px;
     color: rgba(52,52,52,0.5);
 }
+
 
 
 

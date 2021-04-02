@@ -1,6 +1,3 @@
-
-
-
 //header
 
 let auctionSubnav = document.querySelector('#auction-subnav');
@@ -27,22 +24,10 @@ let buttonAccount = document.getElementById('account-button');
 let buttonTransport = document.getElementById('transport-button');
 let notificationIcon = document.getElementById('notification-icon');
 
-// img.onclick = function() {
-//     img.src = 'img/active.svg';
-// }
-// var image = ['img/arrow.png', 'img/active.svg'];
-// img.src = image[0];
+
+
 
 auction.onclick = function() {
-
-    // if(img.innerHTML == image[0]) {
-    //     img.src = image[1];
-    // }
-    // else {
-    //     img.src = image[0];
-    //      img.classList.toggle('documents-button_active');
-    // }
-    
     buttonAuction.classList.toggle('documents-button_active');
     auctionSubnav.classList.toggle('subnav_active');
 }
@@ -96,29 +81,28 @@ searchButton.onclick = function() {
 }
 
 
-
-
-
 //right-block
 
 let buttonDocument = document.getElementById('documents-button');
 let buttonCar = document.getElementById('yourCar-button');
 let dropdownDocument =  document.getElementById('dropdownDocument');
 let dropdownCar =  document.getElementById('dropdownCar');
-let blockDocuments = document.querySelector('.documents');
-let blockCar = document.querySelector('.yourCar');
+let documentsTop = document.querySelector('.documents__top');
+let yourCarTop = document.querySelector('.yourCar__top');
 
-buttonDocument.onclick = function() {
+documentsTop.onclick = function() {
     dropdownDocument.classList.toggle('documents__dropdown_active');
     buttonDocument.classList.toggle('documents-button_active');
     blockDocuments.classList.toggle('documents_active');
 }
 
-buttonCar.onclick = function() {
+yourCarTop.onclick = function() {
     dropdownCar.classList.toggle('yourCar__dropdown_active');
     buttonCar.classList.toggle('documents-button_active');
     blockCar.classList.toggle('documents_active');
 }
+
+
 
 
 //textarea
@@ -134,10 +118,6 @@ let justifyAlign = document.getElementById('justifyAlign');
 let rightAlign = document.getElementById('rightAlign');
 let listNumber = document.getElementById('listNumber');
 let listMarker = document.getElementById('listMarker');
-
-// textBox.onfocus = function() {
-//     textBox.innerHTML = '';
-// }
 
 bold.onclick = function() {
     textBox.classList.toggle('bold');
