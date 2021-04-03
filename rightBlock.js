@@ -6,6 +6,8 @@ let dropdownDocument =  document.getElementById('dropdownDocument');
 let dropdownCar =  document.getElementById('dropdownCar');
 let documentsTop = document.querySelector('.documents__top');
 let yourCarTop = document.querySelector('.yourCar__top');
+let blockDocuments = document.querySelector('.documents');
+let blockCar = document.querySelector('.yourCar');
 
 documentsTop.onclick = function() {
     dropdownDocument.classList.toggle('documents__dropdown_active');

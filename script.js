@@ -24,9 +24,6 @@ let buttonAccount = document.getElementById('account-button');
 let buttonTransport = document.getElementById('transport-button');
 let notificationIcon = document.getElementById('notification-icon');
 
-
-
-
 auction.onclick = function() {
     buttonAuction.classList.toggle('documents-button_active');
     auctionSubnav.classList.toggle('subnav_active');
