@@ -1190,7 +1190,6 @@ footer {
     .container {
         max-width: 260px;
         margin: 0 auto;
-        border: 1px solid black;
     }
 
     .main-content {
@@ -1279,12 +1278,26 @@ footer {
         flex-direction: column;
     }
 
-    .dialog__way img, .dialog__way h2 {
+    .dialog__way img {
         align-self: center;
+        margin: 0 auto;
+    }
+
+    .dialog__way h2 {
+        margin: 10px auto;
     }
 
     .dialog__way-confirm {
         margin: 0 auto;
+    }
+
+    .reasons__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reasons__discount {
+        margin-top: 20px;
     }
 
     /*textarea*/
@@ -1294,7 +1307,32 @@ footer {
     }
 
     .textarea__button-bar ul li {
-        margin-left: 5px;
+        margin-left: 10px;
+    }
+
+    .textarea__button-bar ul li:nth-child(5), .textarea__button-bar ul li:nth-child(9), .textarea__button-bar ul li:nth-child(11) {
+        margin-left: 20px;
+    }
+
+    .textarea__textbox {
+        height: 80px;
+        font-size: 10px;
+        padding-bottom: 0;
+    }
+    
+    .textarea__bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .textarea__bottom button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .input__file-text {
+        font-size: 15px;
     }
 
     
@@ -1314,8 +1352,12 @@ footer {
         margin-top: 0;
     }
 
-    .footer__basics h2, .footer__additional h2, .footer__support h2 {
+    .footer__additional h2, .footer__support h2 {
         margin: 30px 0 10px 0;
+    }
+
+    .footer__basics h2 {
+        margin-top: 0;
     }
 
     .bottom__social-networks {
@@ -1332,11 +1374,6 @@ footer {
         margin-left: auto;
     }
 
-    #idea {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
     .basics__goods a:first-child, .basics__transport a:first-child, .basics__auction a:first-child {
         font-family: 'Gilroy-medium';
         color: #ffffff;
@@ -1348,25 +1385,29 @@ footer {
     }
 
     .footer__bottom a:first-child {
-        text-decoration: none;
-        font-size: 10px;
+        display: none;
     }
 
     .footer__bottom {
         padding-bottom: 20px;
-        margin-left: 85px;
+        margin-left: 0;
+        padding-top: 25px;
+        align-items: center;
     }
 
     .footer__bottom a:nth-child(2) {
         margin-left: 0px;
+        margin-top: 25px;
     }
 
-    .footer__bottom a:nth-child(3) {
+    .footer__bottom a:nth-child(3), #idea {
         margin-left: 0px;
+        margin-top: 25px;
     }
 
     .bottom__social-networks {
         margin-left: 0px;
+        margin-top: 25px;
     }
 
     .bottom__social-networks img {
