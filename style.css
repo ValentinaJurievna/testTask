@@ -960,7 +960,7 @@ hr {
 .documents__dropdown, .yourCar__dropdown {
     border-radius: 0 0 8px 8px;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     display: none;
     transform: scaleY(0);
     transform-origin: 0 0;
@@ -1035,7 +1035,9 @@ hr {
     color: rgba(52,52,52,0.5);
 }
 
-
+.yourCar__dropdown img {
+    align-self: flex-start;
+}
 
 
 /*footer*/
@@ -1147,7 +1149,7 @@ footer {
 
 @media screen and (max-width: 425px) {
     header {
-        width: 100%;
+        width: 210%;
     }
 
     .nav {
@@ -1162,7 +1164,7 @@ footer {
     #header {
         display: flex;
         flex-direction: row;
-        max-width: 770px;
+        /* max-width: 770px; */
     }
 
     .burger {
@@ -1170,7 +1172,7 @@ footer {
         width: 25px;
         height: 16px;
         align-self: center;
-        margin-left: 350px;
+        /* margin-left: 350px; */
     }
 
     #nav .nav__menu, .nav__menu-auth {
@@ -1183,7 +1185,7 @@ footer {
     }
 
     .container {
-        max-width: 10px;
+        max-width: 50%;
         margin: 0 auto;
     }
 
@@ -1197,8 +1199,12 @@ footer {
         padding: 45px;
     }
     
-    .contacts, .payment, .documents, .yourCar {
+    .contacts, .payment, .documents, .yourCar, .documents__dropdown, .yourCar__dropdown {
         width: 420px;
+    }
+
+    .documents__dropdown, .yourCar__dropdown {
+        padding-top: 0px;
     }
     
     .contacts__phone, .contacts__email {
@@ -1242,26 +1248,53 @@ footer {
         font-size: 14px;
     }
     
+    /*documents*/
 
     .documents, .documents__dropdown, .yourCar, .yourCar__dropdown  {
         padding: 45px;
     }
-    
-    .documents__dropdown li {
-        display: flex;
-        align-items: center;
-        margin-top: 12px;
+
+    .documents__dropdown {
+        padding-top: 0;
     }
-    
+
     .documents__dropdown li button, .payment button {
-        display: flex;
-        align-items: center;
-        background-color: transparent;
-        border: none;
-        color: #236EFF;
-        font-size: 14px;
-        margin-top: 15px;
+        font-size: 20px;
     }
+    
+    .documents__dropdown li a {
+        font-size: 20px;
+    }
+
+    /*your-car*/
+
+    .yourCar__dropdown-content button {
+        font-size: 20px;
+    }
+    
+    .yourCar__dropdown-title {
+        font-size: 25px;
+    }
+    
+    .yourCar__dropdown-name, .yourCar__dropdown-phone {
+        font-size: 23px;
+    }
+    
+    .yourCar__dropdown-subtitle {
+        font-size: 15px;
+    }
+
+    .yourCar__dropdown {
+        padding-top: 0;
+    }
+
+    .yourCar__dropdown img {
+        align-self: flex-start;
+        margin-top: 0;
+        width: 130px;
+        height: auto;
+    }
+    
 
     .arrow-img {
         width: 20px;
