@@ -485,6 +485,11 @@ button.add {
     flex-direction: column;
 }
 
+.man {
+    display: flex;
+    flex-direction: row;
+}
+
 .dialog__message-info {
     display: flex;
     flex-direction: row;
@@ -1148,12 +1153,12 @@ footer {
 
 @media screen and (max-width: 425px) {
     header {
-        width: 210%;
+        width: 100%;
     }
 
     .nav {
-        display: flex;
-        justify-content: space-around; 
+        max-width: 260px;
+        margin: 0 auto;
     }
 
     .nav__brand {
@@ -1171,7 +1176,6 @@ footer {
         width: 25px;
         height: 16px;
         align-self: center;
-        /* margin-left: 350px; */
     }
 
     #nav .nav__menu, .nav__menu-auth {
@@ -1180,133 +1184,44 @@ footer {
     }
 
     #nav .nav__menu li, .nav__menu-auth li {
-        opacity: 0;
+        display: none;
     }
 
     .container {
-        max-width: 50%;
+        max-width: 260px;
         margin: 0 auto;
+        border: 1px solid black;
     }
 
     .main-content {
-        flex-direction: column-reverse;
-    }
-
-    
-
-    .contacts, .payment, .left-block__content {
-        padding: 45px;
-    }
-    
-    .contacts, .payment, .documents, .yourCar, .documents__dropdown, .yourCar__dropdown {
-        width: 420px;
-    }
-
-    .documents__dropdown, .yourCar__dropdown {
-        padding-top: 0px;
-    }
-    
-    .contacts__phone, .contacts__email {
-        margin-top: 30px;
-    }
-    
-    .contacts__title, .payment__title, .documents__title, .yourCar__title {
-        font-size: 30px;
-    }
-    
-    .phone__title, .email__title, .payment__subtitle {
-        font-size: 21px;
-    }
-    
-    .phone__2 {
-        margin-left: 30px;
-    }
-    
-    .phone__phones, .email__email {
-        font-size: 25px;
-    }
-    
-    .payment, .documents, .yourCar {
-        margin-top: 30px;
-    }
-    
-    .stage p {
-        font-size: 20px;
-    }
-    
-    .text p:first-child {
-        font-size: 20px;
-    }
-    
-    .text p:nth-child(2) {
-        font-size: 13px;
+        max-width: 260px;
         margin: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        
+    }
+
+    .contacts, .payment, .documents, .yourCar, .left-block__content {
+        max-width: 260px;
+        padding: 10px 0px 10px 10px;
+    }
+
+    .phone__phones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phone__2 {
+        margin-left: 0;
+    }
+
+    .stages p {
+        margin-left: 10px;
     }
     
-    .text a {
-        font-size: 14px;
-    }
-    
-    /*documents*/
-
-    .documents, .documents__dropdown, .yourCar, .yourCar__dropdown  {
-        padding: 45px;
-    }
-
-    .documents__dropdown {
-        padding-top: 0;
-    }
-
-    .documents__dropdown li button, .payment button {
-        font-size: 20px;
-    }
-    
-    .documents__dropdown li a {
-        font-size: 20px;
-    }
-
-    /*your-car*/
-
-    .yourCar__dropdown-content button {
-        font-size: 20px;
-    }
-    
-    .yourCar__dropdown-title {
-        font-size: 25px;
-    }
-    
-    .yourCar__dropdown-name, .yourCar__dropdown-phone {
-        font-size: 23px;
-    }
-    
-    .yourCar__dropdown-subtitle {
-        font-size: 15px;
-    }
-
-    .yourCar__dropdown {
-        padding-top: 0;
-    }
-
-    .yourCar__dropdown img {
-        align-self: flex-start;
-        margin-top: 0;
-        width: 130px;
-        height: auto;
-    }
-    
-
-    .arrow-img {
-        width: 20px;
-        height: 17px;
-    }
 
     .left-block {
-        width: 500px;
-        margin-top: 45px;
-    }
-
-    .left-block__content {
-        width: 500px;
+        margin-right: 0;
     }
 
     .left-block__additional form {
@@ -1347,9 +1262,44 @@ footer {
         margin: 0 auto;
     }
 
+    .dialog__message {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dialog__message-text {
+        margin-left: 0;
+    }
+
+    .dialog__message-name {
+        margin-left: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .dialog__way img, .dialog__way h2 {
+        align-self: center;
+    }
+
+    .dialog__way-confirm {
+        margin: 0 auto;
+    }
+
+    /*textarea*/
+
+    .textarea__button-bar ul li img {
+        width: 10px;
+    }
+
+    .textarea__button-bar ul li {
+        margin-left: 5px;
+    }
+
     
     footer {
-        width: 210%;
+        width: 100%;
     }
 
     #footer {
