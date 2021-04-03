@@ -1154,21 +1154,26 @@ footer {
 @media screen and (max-width: 425px) {
     header {
         width: 100%;
+        padding: 20px 0 20px 0;
     }
 
     .nav {
         max-width: 260px;
-        margin: 0 auto;
+        margin-right: auto; 
     }
 
     .nav__brand {
-        font-size: 25px;
+        font-size: 15px;   
+    }
+
+    .breadcrumb {
+        margin-top: 15px;
     }
 
     #header {
         display: flex;
         flex-direction: row;
-        /* max-width: 770px; */
+        justify-content: center;
     }
 
     .burger {
@@ -1221,6 +1226,7 @@ footer {
 
     .left-block {
         margin-right: 0;
+        max-width: 300px;
     }
 
     .left-block__additional form {
@@ -1228,8 +1234,13 @@ footer {
         flex-direction: column;
     }
 
+    .left-block__photo {
+        margin-top: 25px;
+    }
+
     .form__column:nth-child(2) {
         margin-left: 0px;
+        margin-top: 10px;
     }
 
     .form__button {
@@ -1254,6 +1265,10 @@ footer {
     
     .dialog__documents-reject {
         margin-left: 5px;
+    }
+
+    .dialog__documents-buttons button {
+        width: 100px;
     }
     
     .dialog__documents-buttons {
@@ -1333,6 +1348,31 @@ footer {
 
     .input__file-text {
         font-size: 15px;
+    }
+
+    .documents__dropdown {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .documents__dropdown img {
+        width: 30px;
+    }
+
+    .documents__dropdown li a {
+        font-size: 15px;
+    }
+
+    .documents__dropdown li button {
+        margin: 5px 0 5px 0;
+    }
+
+    .yourCar__dropdown img {
+        width: 60px;
+    }
+
+    .yourCar__dropdown-content button {
+        font-size: 10px;
     }
 
     
