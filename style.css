@@ -1045,11 +1045,10 @@ hr {
 footer {
     background-color: #343434;
     margin-top: 120px;
-    max-width: 100%;
 }
 
 .footer, .footer__bottom {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     margin: 0 auto;
     padding-top: 80px;
     color: #ffffff;
@@ -1348,24 +1347,100 @@ footer {
         margin: 0 auto;
     }
 
-    footer {
-        max-width: 320px;
-        display: flex;
-        align-self: center;
-    }
     
-    .footer, .footer__bottom {
-        max-width: 1140px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+    footer {
+        width: 210%;
     }
 
     #footer {
         display: flex;
-        flex-direction: row;
-        max-width: 70px;
+        justify-content: space-around; 
+        flex-direction: column;
     }
+
+    .basics, .support, .footer, .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .footer__basics h2, .footer__additional h2, .footer__support h2 {
+        margin: 30px 0 10px 0;
+    }
+
+    .bottom__social-networks {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .basics__goods, .basics__transport, .basics__auction, .footer__basics, .footer__additional, .additional, .support__phone, .support__email, .footer__support {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__support {
+        margin-left: auto;
+    }
+
+    #idea {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .basics__goods a:first-child, .basics__transport a:first-child, .basics__auction a:first-child {
+        font-family: 'Gilroy-medium';
+        color: #ffffff;
+        margin-top: 15px;
+    }
+
+    .additional a:first-child {
+        margin-top: 0px;
+    }
+
+    .footer__bottom a:first-child {
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .footer__bottom {
+        padding-bottom: 20px;
+        margin-left: 85px;
+    }
+
+    .footer__bottom a:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .footer__bottom a:nth-child(3) {
+        margin-left: 0px;
+    }
+
+    .bottom__social-networks {
+        margin-left: 0px;
+    }
+
+    .bottom__social-networks img {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .basics__transport, .basics__auction {
+        margin-left: 0px;
+    }
+
+    .footer__additional {
+        margin-left: 0px;
+    }
+
+    .support__email {
+        margin-left: 0px;
+    }
+
+    .footer__support button {
+        align-self: flex-start;
+    }
+
+
 }
 
 
